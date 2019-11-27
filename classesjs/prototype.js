@@ -27,3 +27,27 @@ console.log(harry.info1()); // I have a undefined named undefined
 console.log(harry.info2());  // I have a owl named hedwig
 
 
+
+// TODO
+// * add a 'color' field to the prototype
+// * add a 'bio' method that *returns*:
+//      A ${this.color} ${this.make} made in ${this.year}.
+
+function Vehicle(make, year) {
+    this.make = make;
+    this.year = year;
+
+    this.bio = () => `${this.color} ${this.make} made in ${this.year}`
+
+}
+  Vehicle.prototype.color;
+  //node bio method can be added in this section but it will need a regular function declaration
+
+  let s = new Vehicle("Tesla", 2017);
+  s.color = "black";
+  console.log(s);
+  console.log(s.color);
+  let result = s.bio();
+  console.log(result); //black Tesla made in 2017
+
+  
