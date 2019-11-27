@@ -15,7 +15,39 @@ console.log(numSet);
 
 for (let x of numSet.values()){
     console.log(x);
-}localStorage
+};
 
 
+let chars = 'qwertyui';
+let chars_arr = chars.split("");
+let chars_arr2 = chars.split(" ");
+console.log(chars_arr); //[ 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i' ]
+console.log(chars_arr.length);
 
+
+for (let i = 0; i < chars_arr.length; i++) {
+    const element = chars_arr[i];
+    console.log(element);
+}
+console.log(chars_arr2);// [ 'qwertyui' ]
+let chars_set= new Set (chars_arr);
+console.log(chars_set); // Set { 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i' }
+
+
+// challenge
+
+const contains = (word, letter) => {
+    let letters = word.split("");
+    // TODO create a set with the above 'letters' array
+    let letter_set = new Set (letters); 
+    // TODO return whether the set has the 'letter'
+    return letter_set.has(letter);
+  };
+  
+  let true_check = contains("west", "e");
+  console.log(true_check); // true
+  
+  let false_check = contains("north", "e");
+  console.log(false_check); // false 
+
+  
