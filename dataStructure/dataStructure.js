@@ -51,3 +51,18 @@ const contains = (word, letter) => {
   console.log(false_check); // false 
 
   
+// map
+
+let string1 =  'valderrama'
+
+let letters = new Map();
+
+for (let i = 0; i < string1.length; i++) {
+    const letter = string1[i];
+    if (!letters.has(letter)) {
+        letters.set(letter,1);
+    } else{
+        letters.set(letter, letters.get(letter)+1);
+    }
+}
+console.log(letters); 
