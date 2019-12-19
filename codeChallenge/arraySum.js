@@ -16,7 +16,7 @@ function arraySum2(arr1){
 
 ////------------------solution-----------------
 
-// use sort method to set the indexes to descending or  order 
+// use sort method to set the indexes to descending or ascendig  order 
 function arraySum3(arr){
     let tempArr = arr.sort((a, b) =>{
         return a - b; 
@@ -37,4 +37,27 @@ console.log(arraySum3([1,2,4,34,22])); // returns false
 
 
 
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+let tempMonths = months.sort((a, b) =>{
+    return b - a; 
+});
+console.log(tempMonths);
 
+
+// Converting a for loop to for each
+const items = ['item1', 'item2', 'item3'];
+const copy = [];
+
+// before
+// after
+items.forEach(function(item){
+  copy.push(item);
+});
+
+  // after
+items.forEach(function(item){
+    copy.push(item);
+  });
+
+  console.log(copy);
+  
