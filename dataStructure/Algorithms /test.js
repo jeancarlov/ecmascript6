@@ -1,5 +1,5 @@
 
-// With Recursion 
+// With Recursion  #1
 function countDown(num) {
     if (num <= 0) {
         console.log('All done! with recursion ');
@@ -11,7 +11,7 @@ function countDown(num) {
     
  }
 
-countDown(5)
+// countDown(5)
 
  // Without Recursion 
 
@@ -22,4 +22,19 @@ countDown(5)
      console.log('all done with out recursion ');
     }
 
-countDown1(10);
+// countDown1(10);
+
+// With Recursion  #2
+
+function sumRange(num) {
+    if (num === 1) return 1; 
+        return  num + sumRange (num-1);
+    }
+
+
+let result = sumRange(3);
+console.log(result);
+
+// what's the base case ? if (num === 1) return 1; 
+// difference input? let result = sumRange(10);
+// where is the recurse call ? return  num + sumRange (num-1);
