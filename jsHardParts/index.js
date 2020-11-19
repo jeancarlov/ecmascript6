@@ -76,3 +76,36 @@ function multiplyBy2(input) {
 
 const result4 = copyArrayAndManupulate([1, 2, 3], multiplyBy2);
 console.log(result4);
+
+
+
+/// map 
+function mapArray(array, callback) {
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    newArray.push(callback(array[i]));
+  }
+  return newArray;
+  console.log(newArray);
+}
+
+function addTwo(num) {
+  return num + 2;
+}
+
+const result3 = mapArray([1, 2, 3], addTwo);
+console.log(result3);
+console.log(mapArray([1, 2, 3], addTwo));
+
+
+// forEach
+let array = [1, 2, 3, 4, 5];
+function print(val, index) {
+  console.log(`array[${index}\] = ${val}`);
+}
+for (let index = 0, len = array.length; index < len; index++) {
+  let val = array[index];
+  print(index, val);
+}
+
+array.forEach(print);

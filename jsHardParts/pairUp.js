@@ -55,12 +55,76 @@ console.log(result3);
 console.log(mapArray([1, 2, 3], addTwo));
 
 // Challenge 4
-function forEach(array, callback) {}
+//The forEach() method executes a provided function once for each array element.
+// function once for each element in an array in ascending order.
+
+// Warning: There is no way to stop or break a forEach() loop other than by throwing an exception. 
+// If you need such behavior, the forEach() method is the wrong tool like for loop, every, some, etc.
+
+// Note: forEach is used to executed 
+// forEach function expects a function (callback function) as parameter and will implicitly call it for each element in the array.
+
+let array = [1, 2, 3, 4, 5];
+function print(val, index) {
+  console.log(`array[${index}\] = ${val}`);
+}
+for (let index = 0, len = array.length; index < len; index++) {
+  let val = array[index];
+  print(index, val);
+}
+
+array.forEach(print);
+
+// use for each for this solution 
+// What you have
+let officers = [
+  { id: 20, name: 'Captain Piett' },
+  { id: 24, name: 'General Veers' },
+  { id: 56, name: 'Admiral Ozzel' },
+  { id: 88, name: 'Commander Jerjerrod' }
+];
+
+let officersIds =  [];
+let officersNames =  [];
+
+officers.forEach(function(officer){
+    officersIds.push(officer.id);
+    officersNames.push(officer.name);
+});
+
+console.log(officersIds); //[20, 24, 56, 88]  ok 
+console.log(officersNames); //[ 'Captain Piett',etc]//
+
+
 
 // see for yourself if your forEach works!
 
+
 // Challenge 5
-function mapWith(array, callback) {}
+
+// map array method creates a new array with the results of calling a provided function on every element in the calling array.
+let coordinates = [
+  {
+    name: "coordinate_1",
+    x: 12,
+    y: 123,
+  },
+  {
+    name: "coordinate_2",
+    x: 134,
+    y: 52,
+  },
+  {
+    name: "coordinate_3",
+    x: 34,
+    y: 52,
+  },
+];
+
+let coordinate_names = coordinates.map(coordinate => {
+    return coordinate.name;
+});
+console.log(coordinate_names);
 
 // Challenge 6
 function reduce(array, callback, initialValue) {}
