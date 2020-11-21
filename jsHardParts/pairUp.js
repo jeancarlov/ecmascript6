@@ -55,6 +55,7 @@ console.log(result3);
 console.log(mapArray([1, 2, 3], addTwo));
 
 // Challenge 4
+// forEach takes a single argument 
 //The forEach() method executes a provided function once for each array element.
 // function once for each element in an array in ascending order.
 
@@ -97,6 +98,23 @@ console.log(officersNames); //[ 'Captain Piett',etc]//
 
 
 
+console.log("challenge 4 part 2");
+
+let alphabet = "";
+const letters = ["a", "b", "c", "d"];
+forEach(letters, function (char) {
+  alphabet += char;
+});
+console.log(alphabet); 
+
+function forEach(array, callback) {
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i]);
+  }
+}
+console.log("----------");
+
+
 // see for yourself if your forEach works!
 
 
@@ -126,8 +144,27 @@ let coordinate_names = coordinates.map(coordinate => {
 });
 console.log(coordinate_names);
 
+
+//------
+
 // Challenge 6
-function reduce(array, callback, initialValue) {}
+console.log("challenge 6");
+const nums = [4, 1, 3];
+const add = function(a, b) { return a + b; }
+
+function reduce(array, callback, initialValue) {
+
+     let acc = initialValue;
+     for (let i = 0; i < array.length; i++) {
+       acc = callback(acc, array[i]);
+     }
+     return acc;
+}
+
+let totalReduce =reduce(nums, add, 0);   
+console.log(totalReduce); //-> 8
+
+
 
 // Challenge 7
 function intersection(arrays) {}
@@ -152,3 +189,25 @@ function multiMap(arrVals, arrCallbacks) {}
 
 // console.log(multiMap(['catfood', 'glue', 'beer'], [function(str) { return str.toUpperCase(); }, function(str) { return str[0].toUpperCase() + str.slice(1).toLowerCase(); }, function(str) { return str + str; }]));
 // should log: { catfood: ['CATFOOD', 'Catfood', 'catfoodcatfood'], glue: ['GLUE', 'Glue', 'glueglue'], beer: ['BEER', 'Beer', 'beerbeer'] }
+
+
+
+//extra challenges
+
+
+
+
+
+function newArray(arr) {
+    let newNotes = [];
+    for (let i = 0; i < arr.length; i++) {
+        let element = arr[i];
+        console.log(element);
+        newNotes.push(element)
+        
+    }
+    return newNotes
+}
+
+// let totalArray =  newArray(["Note 1", "Note 2", "Note 3"]);
+// console.log(totalArray);
