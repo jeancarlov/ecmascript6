@@ -2,13 +2,13 @@
 // --------------------------------------
 // console.log("---ExtraInfoStart");
 // one es6 syntax
-let studentIdOnly = studentRecords.find(studentRecord => studentRecord.id)
+// let studentIdOnly = studentRecords.find(studentRecord => studentRecord.id)
 // console.log(studentIdOnly);
 
 // regular function expression syntax 
-let studentIdOnlyTest = studentRecords.find(function (studentRecord) {
-  return studentRecord.name;
-});
+// let studentIdOnlyTest = studentRecords.find(function (studentRecord) {
+//   return studentRecord.name;
+// });
 
 // console.log(studentIdOnlyTest);
 
@@ -35,22 +35,36 @@ function getStudentFromId(studentId) {
   });
 }
 
-function printRecords(record) {
-
-    return 
+function printRecords(recordIds) {
+  let records = recordIds.map(getStudentFromId);
+  console.log("test");
+  console.log(records);
+  records.sort(function sortByNameAsc(record1, record2) {
+    if (record1.name < record2.name) return -1;
+    else if (record1.name > record2.name) return 1;
+    else return 0;
+  });
+  records.forEach(function printRecord(record) {
+    console.log(
+      `${record.name} (${record.id}): ${record.paid ? "Paid" : "Not Paid"}`
+    );
+  });
 }
 
 
 
-function paidStudnetToEnroll(input) {
+// function paidStudnetToEnroll(input) {
     
-}
+// }
 
 
 
-function remindUnpaid(input) {
+// function remindUnpaid(input) {
     
-}
+// }
+
+
+printRecords(currentEnrollment) // working status 200
 
 // console.log(studentInfo.find(name));
 
