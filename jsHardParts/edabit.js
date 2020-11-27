@@ -1,15 +1,17 @@
-function hello(x) {
-    if (x === x) {
-        return "hello edabit.com"
-    }
+
+
+function howManySeconds(x) {
+  return x * 3600;
 }
 
-let  result= hello("x");
+let result = howManySeconds(2);
 console.log(result);
 
-function Hello() {
-    return "hello edabit.com"
+
+function howManySeconds2(hours) {
+  const mins = 60;
+  const seconds = 60;
+  return hours * mins * seconds;
 }
 
-let  result1= Hello("x");
-console.log(result1);
+let howManySeconds3 = (h) => h * 3600;
