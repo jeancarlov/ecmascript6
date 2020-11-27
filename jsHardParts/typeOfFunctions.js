@@ -53,9 +53,9 @@ function printRecords(recordIds) {
 
 
 
-// function paidStudnetToEnroll(input) {
-    
-// }
+function paidStudnetToEnroll(input) {
+    let recordsToEnroll =  
+}
 
 
 
