@@ -118,6 +118,7 @@
 
 // const addition = (num) => num + 1;
 
+// -------------------------
 
 // function cube(x) {
 //     return x * x * x
@@ -131,3 +132,47 @@
 // }
 
 // let result = cubes(3);
+
+// -------------------------
+
+// function lessThanOrEqualToZero(arg) {
+//     let newZero = 0
+//   if (arg <= newZero) {
+//     return true;
+//   } else if (arg > newZero) {
+//   } return false;
+// }
+
+// function lessThanOrEqualToZeroShortSyntax(a) {
+//   let zero = 0;
+//   return a <= 0 ? true : false;
+// }
+
+// let result12 = lessThanOrEqualToZero(5);
+// let result13 = lessThanOrEqualToZero(-2);
+// let result14 = lessThanOrEqualToZero(100);
+// let result15 = lessThanOrEqualToZero(0);
+// console.log(result12);
+// console.log(result13);
+// console.log(result14);
+// console.log(result15);
+
+// -------------------------
+
+//  function calcAge(age) {
+//      return age * 365
+//  }
+
+//  let result13 = console.log(calcAge(10));
+
+//  const calcAgeArrowFn = (age) => age * 365;
+
+// -------------------------
+
+function nextEdge(side1, side2) {
+    let total = side1 + side2 - 1;
+    return total
+}
+
+let result14 = nextEdge(8, 10);
+console.log(result14);
