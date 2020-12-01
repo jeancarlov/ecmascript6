@@ -153,13 +153,29 @@
 // }
 
 //-------------
-function addUp(num) {
-let array = [];
-for (let i = 0; i <= num; i++) {
-  array.push(i);
-}
-return array.reduce((a, b) => a + b);
-}
+// function addUp(num) {
+// let array = [];
+// for (let i = 0; i <= num; i++) {
+//   array.push(i);
+// }
+// return array.reduce((a, b) => a + b);
+// }
 
-let result6 = addUp(4);
-console.log(result6);
+// let result6 = addUp(4);
+// console.log(result6);
+
+// function profitableGamble(prob, prize, pay) {
+ 
+//     if (prob * prize > pay) {
+//         return true
+//     } else{
+//         return false
+//     }
+// }
+
+// let resultPay = profitableGamble(0.2, 50, 9);
+// console.log(resultPay);
+
+
+function sortDrinkByPrice(drinks) {}
+

@@ -169,10 +169,66 @@
 
 // -------------------------
 
-function nextEdge(side1, side2) {
-    let total = side1 + side2 - 1;
-    return total
+// function nextEdge(side1, side2) {
+//     let total = side1 + side2 - 1;
+//     return total
+// }
+
+// let result14 = nextEdge(8, 10);
+// console.log(result14);
+
+// function animals(chickens, cows, pigs) {
+// chlegs= chickens *2
+// colegs= cows *4
+// pilegs= pigs *4
+
+// let newSum = chlegs + colegs + pilegs;
+// return newSum;
+// }
+
+// let result15= animals(2, 3, 5);
+// console.log(result15);
+
+// function animals2(chickens, cows, pigs) {
+//   return chickens * 2 + (cows + pigs) * 4;
+// }
+
+// function squared(b) {
+//   let total = Math.sqrt(b)
+//   return total;
+// }
+// let result15=squared(5);
+// console.log(result15);
+
+// function squared1(b) {
+//   return b * b;
+// }
+// let result16 = squared(5);
+// console.log(result16);
+
+
+// function addition(a, b) {
+//     return a + b
+// }
+// let result17 = addition(3, 2);
+// console.log(result17);
+
+drinks = [
+  { name: "lemonade", price: 50 },
+  { name: "lime", price: 10 },
+];
+
+function sortDrinkByPrice(drinks) {
+  const sorted = drinks.sort(function (a, b) {
+    return a.price - b.price;
+  });
+  return sorted;
+}
+function sortDrinkByPriceWithTwoArg(obj1, obj2) {
+
+    return obj1.price - obj2.price
+    
 }
 
-let result14 = nextEdge(8, 10);
-console.log(result14);
+let result20 = sortDrinkByPrice(drinks);
+console.log(result20);
