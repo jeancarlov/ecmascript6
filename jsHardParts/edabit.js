@@ -213,22 +213,39 @@
 // let result17 = addition(3, 2);
 // console.log(result17);
 
-drinks = [
-  { name: "lemonade", price: 50 },
-  { name: "lime", price: 10 },
-];
+// drinks = [
+//   { name: "lemonade", price: 50 },
+//   { name: "lime", price: 10 },
+// ];
 
-function sortDrinkByPrice(drinks) {
-  const sorted = drinks.sort(function (a, b) {
-    return a.price - b.price;
-  });
-  return sorted;
-}
-function sortDrinkByPriceWithTwoArg(obj1, obj2) {
+// function sortDrinkByPrice(drinks) {
+//   const sorted = drinks.sort(function (a, b) {
+//     return a.price - b.price;
+//   });
+//   return sorted;
+// }
+// function sortDrinkByPriceWithTwoArg(obj1, obj2) {
 
-    return obj1.price - obj2.price
+//     return obj1.price - obj2.price
     
+// }
+
+// let result20 = sortDrinkByPrice(drinks);
+// console.log(result20);
+
+function RegexPotatoes(str) {
+ let rx = /potato/g;
+	return str.match(rx).length;
+    
+  }
+  
+let result21 = RegexPotatoes("potatopotato");
+console.log(result21);
+
+function SplitPotatoes(str) {
+  var arr = str.split("potato");
+  return arr.length - 1;
 }
 
-let result20 = sortDrinkByPrice(drinks);
-console.log(result20);
+let result22 = SplitPotatoes("potatopotato");
+console.log(result22);
