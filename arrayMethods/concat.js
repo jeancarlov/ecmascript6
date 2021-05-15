@@ -13,3 +13,11 @@ const array3 = array1.concat(array2);
 
 console.log(array3);
 // expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+
+const a = 12;
+const b = 24;
+
+const addTotal = a + b;
+
+console.log(addTotal);

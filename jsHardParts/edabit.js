@@ -233,14 +233,14 @@
 // let result20 = sortDrinkByPrice(drinks);
 // console.log(result20);
 
-function RegexPotatoes(str) {
- let rx = /potato/g;
-	return str.match(rx).length;
+// function RegexPotatoes(str) {
+//  let rx = /potato/g;
+// 	return str.match(rx).length;
     
-  }
+//   }
   
-let result21 = RegexPotatoes("potatopotato");
-console.log(result21);
+// let result21 = RegexPotatoes("potatopotato");
+// console.log(result21);
 
 function SplitPotatoes(str) {
   var arr = str.split("potato");
@@ -249,3 +249,83 @@ function SplitPotatoes(str) {
 
 let result22 = SplitPotatoes("potatopotato");
 console.log(result22);
+
+// -------------------------
+
+
+// const add= (x,y) => x+y 
+// let result22= add(3,4);
+// console.log(result22);
+
+// const names = [ 'andrew', 'carlos', 'john']
+
+// let result20 = names[names.length -1];
+// console.log(result20);
+
+
+// const nums = [10,20,40, 50];
+
+// nums[3] = 1000
+// console.log(nums);
+
+
+// const person = {
+//   name: "Andrew",
+//   age: 27,
+// };
+// const location = {
+//   city: "Philadelphia",
+//   country: "USA",
+// };
+// const overview = {
+//   ...person,
+//   ...location,
+//   name: "Mike",
+// };
+// console.log(overview);
+
+
+// function hello(str) {
+//   return str.toLowerCase();
+// }
+
+// let result23= hello('hello edabit.com')
+// // console.log(result23);
+
+// const dropRight = (arr, num = 1) => {
+// return arr.reverse().slice(( num)).reverse()
+// };
+
+// let result24 = dropRight([1, 2, 3], 2);
+// console.log(result24);
+
+let animals = [
+  { name: "Tibbers", type: "cat", isNeutered: true, age: 2 },
+  { name: "Fluffball", type: "rabbit", isNeutered: false, age: 1 },
+  { name: "Strawhat", type: "cat", isNeutered: true, age: 5 },
+];
+
+// what you need:
+// ['Tibbers', 'Fluffball', 'Strawhat']
+
+// let animalNames = animals.map((animal) => {
+//   return animal.name;
+// });
+
+// what you need:
+// [{name: 'Tibbers', species: 'cat'}, {name: 'Fluffball', species: 'rabbit'}, {name: 'Strawhat', species: 'cat'}]
+
+// let petDetails = animals.map((animal) => {
+//   return {
+//     name: animal.name,
+//     species: animal.type,
+//   };
+// });
+
+// let result= console.log(petDetails);
+
+
+// let a = 1
+// let b = 2
+
+// console.log(a, b);
